@@ -15,3 +15,4 @@ default-members = [
 [workspace.dependencies]
 rocksdb = "0.21.0"
 reth-libmdbx = { git = "https://github.com/paradigmxyz/reth.git" }
+reth-db = { git = "https://github.com/paradigmxyz/reth.git" }

@@ -6,3 +6,4 @@ edition = "2021"
 [dependencies]
 rocksdb.workspace = true
 reth-libmdbx.workspace = true
+reth-db.workspace = true
