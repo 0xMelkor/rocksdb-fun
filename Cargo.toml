@@ -1,11 +1,8 @@
 [workspace]
 
-members = [
-    "bin/consumer",
-    "bin/producer",
-]
+members = ["bin/consumer", "bin/producer"]
 
 default-members = ["bin/consumer", "bin/producer"]
 
 [workspace.dependencies]
-
+rocksdb = "0.21.0"
