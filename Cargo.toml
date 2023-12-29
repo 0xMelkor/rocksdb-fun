@@ -1,0 +1,11 @@
+[workspace]
+
+members = [
+    "bin/consumer",
+    "bin/producer",
+]
+
+default-members = ["bin/consumer", "bin/producer"]
+
+[workspace.dependencies]
+
