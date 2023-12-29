@@ -7,6 +7,7 @@ fn main() {
 
     let mut opts = Options::default();
     opts.set_write_buffer_size(128 * 1024);
+    opts.create_if_missing(true);
     
     // NB: db is automatically closed at end of lifetime
     let db = DB::open(&opts, path).unwrap();
