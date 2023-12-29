@@ -1,9 +1,17 @@
 [workspace]
-
-members = ["bin/consumer", "bin/producer", "crates/database"]
-
-default-members = ["bin/consumer", "bin/producer"]
+members = [
+    "bin/rockdb-consumer",
+    "bin/rockdb-producer",
+    "bin/mdbx-consumer",
+    "bin/mdbx-producer",
+]
+default-members = [
+    "bin/rockdb-consumer",
+    "bin/rockdb-producer",
+    "bin/mdbx-consumer",
+    "bin/mdbx-producer",
+]
 
 [workspace.dependencies]
-database = { path = "./crates/database" }
 rocksdb = "0.21.0"
+reth-libmdbx = { git = "https://github.com/paradigmxyz/reth.git" }

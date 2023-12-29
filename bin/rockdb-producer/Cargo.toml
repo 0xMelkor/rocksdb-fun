@@ -1,10 +1,10 @@
 [package]
-name = "producer"
+name = "rockdb-producer"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 rocksdb.workspace = true
-database.workspace = true
+reth-libmdbx.workspace = true
 
 

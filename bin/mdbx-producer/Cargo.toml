@@ -1,7 +1,8 @@
 [package]
-name = "database"
+name = "mdbx-producer"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 rocksdb.workspace = true
+reth-libmdbx.workspace = true
