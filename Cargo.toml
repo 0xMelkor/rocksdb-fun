@@ -1,8 +1,9 @@
 [workspace]
 
-members = ["bin/consumer", "bin/producer"]
+members = ["bin/consumer", "bin/producer", "crates/database"]
 
 default-members = ["bin/consumer", "bin/producer"]
 
 [workspace.dependencies]
+database = { path = "./crates/database" }
 rocksdb = "0.21.0"
